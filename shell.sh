@@ -38,15 +38,15 @@ if [ $name == "1" -a $pass == "1" ] ; then
 						
 						
 				elif [ $selct == "99" ]; then
-						echo "exit"
-						exit;
+						echo "$selct"
+						 exit;
 				elif [ $selct == "1" ]; then
 						echo "main menu"
 				else
-						 echo "What you don't like Unix/Linux OS."
+						echo "What you want"
 				fi
 			else
-				   if [ $osch -eq 2 ] ; then
+				   if [ $selct == "2" ] ; then
 						echo "***********************************"
 						echo "ESOFT PROJECT"
 						echo "***********************************"
@@ -62,7 +62,7 @@ if [ $name == "1" -a $pass == "1" ] ; then
 								cp config.env QA
 								cp about.html QA
 								cp contact.html QA
-								echo "Move to Prod folder"
+								echo "Move to QA folder"
 								
 								
 						elif [ $selct == "99" ]; then
